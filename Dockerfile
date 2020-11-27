@@ -11,3 +11,5 @@ RUN cd /tmp \
   && tar -xf factor.tar.gz \
   && mv factor $HOME/.factor
 ENV PATH=$HOME/.factor:$PATH
+
+RUN echo "USE: parser auto-use" > $HOME/.factor-rc
