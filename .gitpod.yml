@@ -1,1 +1,2 @@
-image: bubbler9903/factor-gitpod:latest
+image:
+    file: Dockerfile
