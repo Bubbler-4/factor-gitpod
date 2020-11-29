@@ -12,4 +12,4 @@ RUN cd /tmp \
   && mv factor $HOME/.factor
 ENV PATH=$HOME/.factor:$PATH
 
-RUN echo "USE: parser auto-use" > $HOME/.factor-rc
+RUN printf "USING: parser vocabs.loader sequences namespaces ;\nauto-use\nvocab-roots [ \".\" suffix ] change\n" > $HOME/.factor-rc
