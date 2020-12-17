@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc:latest
+FROM gitpod/workspace-full:latest
 
 USER root
 RUN apt-get update -y -q \
